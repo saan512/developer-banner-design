@@ -162,7 +162,11 @@ export default function Home() {
               {/* Social Links */}
               <div className="flex gap-4 pt-4 animate-fade-in-up stagger-5">
                 {[
-                  { icon: Github, href: "https://github.com", label: "GitHub" },
+                  {
+                    icon: Github,
+                    href: "https://github.com/saan512",
+                    label: "GitHub",
+                  },
                   {
                     icon: Linkedin,
                     href: "https://linkedin.com/in/syed-aqeel-abbas-naqvi",
@@ -721,7 +725,7 @@ export default function Home() {
                   </Button>
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/saan512"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -747,7 +751,7 @@ export default function Home() {
               </p>
               <div className="flex gap-8">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/saan512"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium"
