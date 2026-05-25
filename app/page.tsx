@@ -1270,7 +1270,7 @@ function EditorialLayout({
               location: "Islamabad, Pakistan",
               period: "Jan 2024 – Present",
               points: [
-                "Sole developer on a 4-person startup team — full technical ownership with no senior engineering support or dedicated staging environment.",
+                // "Sole developer on a 4-person startup team — full technical ownership with no senior engineering support or dedicated staging environment.",
                 "Made every architectural decision independently: design system structure, real-time strategy, database schema, deployment topology.",
                 "Established engineering culture from scratch: Sentry observability across client/server/edge runtimes, PostHog analytics, Jira issue tracking, Confluence documentation.",
                 "Maintained zero-downtime deployments to live-traffic production throughout continuous feature development.",
@@ -2551,7 +2551,7 @@ function KineticLayout({
               location: "Islamabad, Pakistan",
               period: "Jan 2024 – Present",
               points: [
-                "Sole developer on a 4-person startup team — full technical ownership with no senior engineering support or dedicated staging environment.",
+                // "Sole developer on a 4-person startup team — full technical ownership with no senior engineering support or dedicated staging environment.",
                 "Made every architectural decision independently: design system structure, real-time strategy, database schema, deployment topology.",
                 "Established engineering culture from scratch: Sentry observability across client/server/edge runtimes, PostHog analytics, Jira issue tracking, Confluence documentation.",
                 "Maintained zero-downtime deployments to live-traffic production throughout continuous feature development.",
@@ -2960,7 +2960,9 @@ export default function Home() {
   const [isDark, setIsDark] = useState(false);
   const [activeDesign, setActiveDesign] = useState<DesignId>("editorial");
 
-  useEffect(() => { applyThemeVars(THEMES["amber"], false); }, []);
+  useEffect(() => {
+    applyThemeVars(THEMES["amber"], false);
+  }, []);
 
   const [transitionKey, setTransitionKey] = useState(0);
   const [isSwitching, setIsSwitching] = useState(false);
