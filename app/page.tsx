@@ -2957,8 +2957,10 @@ function KineticLayout({
 ═══════════════════════════════════════════════════════════════════════════ */
 export default function Home() {
   const [activeTheme, setActiveTheme] = useState<ThemeId>("amber");
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const [activeDesign, setActiveDesign] = useState<DesignId>("editorial");
+
+  useEffect(() => { applyThemeVars(THEMES["amber"], false); }, []);
 
   const [transitionKey, setTransitionKey] = useState(0);
   const [isSwitching, setIsSwitching] = useState(false);
